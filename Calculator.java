@@ -9,8 +9,10 @@ public class Calculator {
         //int total = 0;
         System.out.println("Enter the expression for normal calculator");
         String input = sc.next();
-        Evaluate expression = new Evaluate();
-        expression.execute(input);
+        EvaluateService evaluate = new EvaluateService();
+        int result = evaluate.execute(input);
+        System.out.print("Result =" +result);
+
 
 
     }
